@@ -1,0 +1,9 @@
+IDM-API Play application
+=================================
+
+Following services are made available,
+
+GET:[Generate a token for a username]   http://<host>:<port>/idm/admin/users/token/{userName}   Eg: http://localhost:9000/idm/admin/users/token/cheesy@leapset.com
+
+GET:[Retrieve a user by a token]        http://<host>:<port>/idm/admin/users/user/{token}       Eg: http://localhost:9000/idm/admin/users/user/1asFwecdcsdr33dsdas
+

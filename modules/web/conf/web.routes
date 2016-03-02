@@ -1,0 +1,9 @@
+# Routes
+# This file defines all application web.routes (Higher priority web.routes first)
+# ~~~~
+
+# Rerouting Services coming from /idm
+# http://<host>:<port>/idm
+#Should be a POST method Once end to end serving is available
+GET     /admin/users/token/:username       @net.cake.idm.api.controller.UserTokenController.generateUserToken(username)
+GET     /admin/users/user/:token           @net.cake.idm.api.controller.UserTokenController.getUserByToken(token)
